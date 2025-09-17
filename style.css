@@ -1,0 +1,115 @@
+body {
+  background-image: url('8663.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.item {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: skyblue;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  margin-bottom: 30px;
+}
+
+.calendar-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.calender {
+  width: 300px;
+  background: Whi;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.month {
+  text-align: center;
+ background: linear-gradient(to right,Hotpink,Red,Blue,Red,
+ Hotpink);
+  color: lightpink;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  letter-spacing: 1px;
+}
+
+.month strong {
+  display: block;
+  margin: 5px 0;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-family: 'Arial', sans-serif;
+  background: white;
+}
+
+th, td {
+  padding: 12px 8px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: Black; 
+  color: yellow;
+  font-family: "Arial Black", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+td {
+  background-color: hotpink;
+  transition: background-color 0.3s ease;
+}
+
+td:hover {
+  background-color: yellow; 
+  cursor: pointer;
+}
+
+td[style*="color:red"] {
+  color: red !important;
+  font-weight: bold;
+}
+
+/* Holiday table specific styles */
+.calender:last-child table th {
+  background-color: Black;
+  color: yellow;
+  font-size: 11px;
+  padding: 8px 4px;
+}
+
+.calender:last-child table td {
+  font-size: 10px;
+  padding: 8px 4px;
+  vertical-align: top;
+}
+
+.calender:last-child table td a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  line-height: 1.2;
+}
+
+.calender:last-child table td a:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
